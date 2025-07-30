@@ -5,5 +5,7 @@ ENV N8N_LISTEN_ADDRESS=0.0.0.0
 ENV N8N_BASIC_AUTH_ACTIVE=true
 ENV N8N_BASIC_AUTH_USER=admin
 ENV N8N_BASIC_AUTH_PASSWORD=admin123
+ENV N8N_HOST=n8n-on-render.onrender.com
+ENV WEBHOOK_URL=https://n8n-on-render.onrender.com
 
 EXPOSE 5678
