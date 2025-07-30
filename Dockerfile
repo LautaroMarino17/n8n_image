@@ -1,0 +1,12 @@
+FROM n8nio/n8n
+
+ENV GENERIC_TIMEZONE=America/Caracas
+ENV N8N_LISTEN_ADDRESS=0.0.0.0
+ENV N8N_HOST=n8n-on-render.onrender.com
+ENV WEBHOOK_URL=https://n8n-on-render.onrender.com
+ENV N8N_SKIP_WEBHOOK_DEREGISTRATION_SHUTDOWN=true
+ENV N8N_SECURE_COOKIE=false
+
+EXPOSE 5678
+
+CMD ["n8n"]
