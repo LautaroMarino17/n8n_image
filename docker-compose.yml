@@ -1,4 +1,4 @@
-version: '3.8'
+version: "3"
 
 services:
   n8n:
@@ -9,8 +9,8 @@ services:
     environment:
       - GENERIC_TIMEZONE=America/Caracas
       - N8N_LISTEN_ADDRESS=0.0.0.0
-      - N8N_HOST=noted-one-lab.ngrok-free.app
-      - WEBHOOK_URL=https://noted-one-lab.ngrok-free.app
+      - N8N_HOST=n8n-on-render.onrender.com   # Reemplazá con el subdominio que te da Render
+      - WEBHOOK_URL=https://n8n-on-render.onrender.com # Igual que arriba pero con https
       - N8N_SKIP_WEBHOOK_DEREGISTRATION_SHUTDOWN=true
       - N8N_SECURE_COOKIE=false
     volumes:
